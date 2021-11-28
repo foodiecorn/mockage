@@ -1,0 +1,20 @@
+[
+  {
+    "path": "/api/hello",
+    "method": "get",
+    "status": 200,
+    "body": "Get!"
+  },
+  {
+    "path": "/api/hello",
+    "method": "post",
+    "status": 200,
+    "body": "Post!"
+  },
+  {
+    "path": "/api/bye",
+    "method": "get",
+    "status": 200,
+    "body": "Bye!"
+  }
+]
