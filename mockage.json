@@ -1,0 +1,8 @@
+[
+  {
+    "path": "/api/hello",
+    "method": "GET",
+    "status": 200,
+    "body": "Hello World!"
+  }
+]
