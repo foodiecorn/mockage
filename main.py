@@ -2,7 +2,7 @@ import flask
 import json
 import os
 
-MOCKAGE_CONFIG_PATH = os.getenv("MOCKAGE_CONFIG", "mockage.json")
+MOCKAGE_CONFIG_PATH = os.getenv("MOCKAGE_CONFIG_PATH", "/etc/mockage/mockage.conf")
 
 
 class Route(json.JSONDecoder):
