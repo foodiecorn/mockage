@@ -2,7 +2,7 @@ import flask
 import json
 import os
 
-MOCKAGE_CONFIG_PATH = os.getenv("MOCKAGE_CONFIG_PATH", "/etc/mockage/mockage.conf")
+MOCKAGE_CONFIG_PATH = os.getenv("MOCKAGE_CONFIG_PATH", "/etc/mockage/mockage.json")
 
 
 class Route(json.JSONDecoder):
@@ -17,7 +17,7 @@ class Route(json.JSONDecoder):
 
         if path not in routes:
             routes[path] = {}
-        routes[path][method] = {"body": obj["body"], "status": obj["status"]}
+        routes[path][method] = {"body": obj.get("body", ""), "status": obj["status"]}
 
         return routes
 
